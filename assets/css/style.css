@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+/*Body*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*Generic Styles*/
+  color: #3a3a3a;
+  font-family: Arial, sans-serif;
+}
+
 /* Header*/
 header {
   background-color: lightcoral;
@@ -13,6 +23,8 @@ header {
 /* Main Content */
 main {
   background-color: lightblue;
+    /* Make main element take up surplus space to push Footer down */
+  flex: 1 0 auto;
 }
 
 /* Footer */
