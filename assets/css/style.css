@@ -27,6 +27,9 @@ header {
   z-index: 99;
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;);
+  display: flex;
+  justify-content: space-between;
+  align-items:baseline;
 }
 
 header a {
@@ -36,13 +39,13 @@ header a {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  text-align: center;
-  padding: 1rem;
+  padding: 1em;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #252525;
 }
 
+/* Header Navigation Menu */
 #menu {
   font-size:110%;
   letter-spacing: 4px;
@@ -53,8 +56,32 @@ h1 {
   margin: 1 em;
 }
 
-#active {
-  border:bottom: 1px solid #3a3a3a;
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar Styling*/
+nav {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  padding: 0 1em;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top:100%;
+} 
+
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#nav-toggle-label {
+  font-size: 2rem;
 }
 
 /* Main Content */
@@ -62,7 +89,7 @@ main {
   background-color: lightblue;
   /* Make main element take up surplus space to push Footer down */
   flex: 1 0 auto;
-}
+  margin-top: 47px;
 
 /* Footer */
 footer {
