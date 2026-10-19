@@ -92,8 +92,18 @@ main {
   margin-top: 47px;
 }
 /* Footer */
-footer {
-  background-color: orange;
+#social-media {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-media a {
+  color: #3a3a3a;
+  font-size: 160%;
+  padding: 5%;
 }
 
 /* Media query: Tablets and larger devices over 768px */
