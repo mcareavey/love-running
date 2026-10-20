@@ -37,20 +37,36 @@
 
     <!--Main Content-->
     <main>
-        <section>
-            <h2>Welcome to Love Running</h2>
-            <p>Join our community of passionate runners in Dublin. Whether you're a beginner or an experienced
-                marathoner, we have something for everyone.</p>
-        </section>
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>5K Fun Run - June 15th</li>
-                <li>Marathon Training Workshop - July 10th</li>
-                <li>Community Run - August 5th</li>
-            </ul>
-        </section>
+        <section id="signup">
+            <form method="POST" action="https://formdump.codeinstitute.net" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
 
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" required><br>
+
+                <label for="email_address">Email Address</label>
+                <input type="text" id="email_address" name="email_address" required><br>
+
+                <div class="radio_buttons">
+                    <div id="road">
+                        <label for="road_button">Road</label>
+                        <input type="radio" id="road_button" name="running_preference" value="road" checked>
+                    </div>
+                    <div id="trail">
+                        <label for="trail_button">Trail</label>
+                        <input type="radio" id="trail_button" name="running_preference" value="trail">
+                    </div>
+                    <div id="both">
+                        <label for="both_button">Both</label>
+                        <input type="radio" id="both_button" name="running_preference" value="both">
+                    </div>
+                    <button type="submit">Let's Run!</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <!--Footer Section-->
