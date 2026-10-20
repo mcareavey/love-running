@@ -199,6 +199,14 @@ main {
   padding: 5%;
 }
 
+/* Media query: Large or landscape devices over 576px */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* Media query: Tablets and larger devices over 768px */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -255,6 +263,12 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery HTML styling */
+  #photos {
+    column-count: 3;
+    column-gap: 0;
+  }
 }
 
 /* Media query: Laptops and larger devices over 992px */
@@ -264,6 +278,12 @@ main {
     border-bottom: 1px solid #3a3a3a;
     display: inline-block;
     cursor: pointer;
+  }
+
+  /* Gallery HTML styling */
+  #photos {
+    column-count: 4;
+    column-gap: 0;
   }
 }
 
